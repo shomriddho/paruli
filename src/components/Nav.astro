@@ -1,0 +1,100 @@
+<style>
+  /* Custom styles */
+  .dropdown .content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    /* Ensure dropdown appears above other content */
+  }
+
+  .dropdown:hover .content,
+  .dropdown:focus-within .content {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  /* Media query for mobile menu */
+  @media (max-width: 768px) {
+    .mobile-menu {
+      display: block;
+    }
+  }
+</style>
+
+<nav class="bg-blue-400 p-4">
+  <div class="flex justify-between items-center">
+    <div>
+      <a href="#" class="text-black font-bold">Logo</a>
+    </div>
+    <div class="hidden md:flex">
+      <a href="#" class="text-black mx-8 font-semibold text-xl">Home</a>
+      <div class="dropdown relative ">
+        <button class="text-black font-semibold text-xl mx-8 z-10">Dropdown</button>
+        <div class="content z-10 bg-blue-100 divide-y-2 divide-blue-400 shadow-xl mx-8 ">
+          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Item 1</a>
+          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Item 2</a>
+          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Item 3</a>
+        </div>
+      </div>
+      <div class="dropdown relative">
+        <button class="text-black font-semibold text-xl mx-8 z-10">Dropdown</button>
+        <div class="content z-10 bg-blue-100 divide-y-2 divide-blue-400 shadow-xl mx-8">
+          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Item 1</a>
+          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Item 2</a>
+          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Item 3</a>
+        </div>
+      </div>
+      <a href="#" class="text-black mx-8 font-semibold text-xl">About</a>
+    </div>
+    <div class="md:hidden">
+      <!-- Hamburger menu icon -->
+      <button id="menu-toggle" class="text-black focus:outline-none">
+        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div id="mobile-menu" class="mobile-menu md:hidden hidden bg-blue-400">
+  <a href="#" class="block py-2 px-4 text-black">Home</a>
+  <div class="dropdown relative">
+    <button class="block py-2 px-4 text-black relative">Dropdown</button>
+    <div class="content block z-0 w-screen bg-blue-100">
+      <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-500">Item 1</a>
+      <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-500">Item 2</a>
+      <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-500">Item 3</a>
+    </div>
+  </div>
+  <a href="#" class="block py-2 px-4 text-black">About</a>
+</div>
+
+<script>
+  document.getElementById("menu-toggle").addEventListener("click", function() {
+    var mobileMenu = document.getElementById("mobile-menu");
+    if (mobileMenu.classList.contains("hidden")) {
+      mobileMenu.classList.remove("hidden");
+      // Add event listener to handle clicks outside the menu
+      document.addEventListener("click", closeMobileMenu);
+    } else {
+      mobileMenu.classList.add("hidden");
+      // Remove event listener when menu is closed
+      document.removeEventListener("click", closeMobileMenu);
+    }
+  });
+
+  function closeMobileMenu(event) {
+    var mobileMenu = document.getElementById("mobile-menu");
+    var menuToggle = document.getElementById("menu-toggle");
+    // Close menu if clicked outside the mobile menu or the menu toggle button
+    if (!mobileMenu.contains(event.target) && event.target !== menuToggle) {
+      mobileMenu.classList.add("hidden");
+      document.removeEventListener("click", closeMobileMenu);
+    }
+  }
+</script>
