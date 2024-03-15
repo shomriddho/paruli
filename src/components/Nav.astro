@@ -1,3 +1,4 @@
+
 <style>
   /* Custom styles */
   .dropdown .content {
@@ -12,71 +13,68 @@
     display: block;
   }
 
-  .mobile-menu {
-    display: none;
-  }
+
 
   /* Media query for mobile menu */
-  @media (max-width: 768px) {
-    .mobile-menu {
-      display: block;
-    }
+
    
-  }
+
 </style>
 
-<nav class="bg-blue-200 p-4">
+<nav class="bg-blue-200 p-4 top-0 fixed z-50  w-full">
   <div class="flex justify-between items-center">
     <div>
       <a href="#" class="text-black font-bold">Logo</a>
     </div>
     <div class="hidden lg:flex">
-      <a href="#" class="text-black mx-4 font-semibold text-xl ">Home</a>
+      <a href="/" class="text-black mx-4 font-semibold text-xl ">Home</a>
       <div class="dropdown relative ">
-        <button class="text-black font-semibold text-xl mx-4 z-10">About <i class="fa-solid fa-chevron-down ml-2"></i></button>
+        <a href="/about/"><button class="text-black font-semibold text-xl mx-4 z-10">About <i class="fa-solid fa-chevron-down ml-2"></i></button></a>
+        
         <div class="content z-10 bg-blue-100 divide-y-2 divide-blue-400 shadow-xl mx-4 ">
-          <a href="#" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300">About Us</a>
-          <a href="#" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300">Vision & Mission</a>
-          <a href="#" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300">Financials</a>
-          <a href="#" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300">Video Gallery</a>
-          <a href="#" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300">Photo Gallery</a>
+          <a href="/about/" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300">About Us</a>
+          <a href="/about/vision-mission/" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300">Vision & Mission</a>
+          <a href="/about/financials/" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300">Financials</a>
+          <a href="/about/video-gallery/" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300">Video Gallery</a>
+          <a href="/about/photo-gallery/" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300">Photo Gallery</a>
 
           
         </div>
       </div>
       <div class="dropdown relative">
-        <button class="text-black font-semibold text-xl mx-4 z-10">Programs <i class="fa-solid fa-chevron-down ml-2"></i></button>
+        <a href="/programs/education/"><button class="text-black font-semibold text-xl mx-4 z-10">Programs <i class="fa-solid fa-chevron-down ml-2"></i></button><a/>
         <div class="content z-10 bg-blue-100 divide-y-2 divide-blue-400 shadow-xl mx-4">
-          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Education</a>
-          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Health</a>
-          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300"> Special Projects</a>
+          <a href="/programs/education/" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Education</a>
+          <a href="/programs/health/" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Health</a>
+          <a href="/programs/special-projects/" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300"> Special Projects</a>
         </div>
       </div>
       <div class="dropdown relative">
-        <button class="text-black font-semibold text-xl mx-4 z-10">Ways To Give <i class="fa-solid fa-chevron-down ml-2"></i></button>
+       <a href="/ways-to-give/"><button class="text-black font-semibold text-xl mx-4 z-10">Ways To Give <i class="fa-solid fa-chevron-down ml-2"></i></button></a>
         <div class="content z-10 bg-blue-100 divide-y-2 divide-blue-400 shadow-xl mx-4">
-          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Debit / Credit Card</a>
-          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">PayPal & Donor Websites</a>
-          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300"> Online Fundraisers</a>
-          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Donate a Car</a>
-          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Will (Legacy Giving)</a>
+          <a href="/ways-to-give/#Debit-Credit-Card" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Debit / Credit Card</a>
+          <a href="/ways-to-give/#PayPal-&-Donor-Websites" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">PayPal & Donor Websites</a>
+          <a href="/ways-to-give/#Online-Fundraisers" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300"> Online Fundraisers</a>
+          <a href="/ways-to-give/#Donate-a-Car" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Donate a Car</a>
+          <a href="/ways-to-give/#Will" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Will (Legacy Giving)</a>
 
 
         </div>
       </div>
       <div class="dropdown relative">
-        <button class="text-black font-semibold text-xl mx-4 z-10">Events <i class="fa-solid fa-chevron-down ml-2"></i></button>
+      <a href="/events/">  <button class="text-black font-semibold text-xl mx-4 z-10">Events <i class="fa-solid fa-chevron-down ml-2"></i></button></a>
         <div class="content z-10 bg-blue-100 divide-y-2 divide-blue-400 shadow-xl mx-4">
-          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">News</a>
-          <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Event</a>
+          <a href="/news/" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">News</a>
+          <a href="/events/" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Event</a>
         </div>
       </div>
-      <a href="#" class="text-black mx-4 font-semibold text-xl ">Contact Us</a>
+      <a href="/contact/" class="text-black mx-4 font-semibold text-xl ">Contact Us</a>
     </div>
     <div class="lg:hidden">
       <!-- Hamburger menu icon -->
-      <button id="menu-toggle" class="text-black focus:outline-none">
-        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <button id="menu-toggle" class="text-black  " onclick="const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');" >
+        <svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
         </svg>
       </button>
@@ -85,40 +83,48 @@
 </nav>
 
 <!-- Mobile menu -->
-<div id="mobile-menu" class="mobile-menu lg:hidden hidden bg-blue-400">
-  <a href="#" class="block py-2 px-4 text-black">Home</a>
-  <div class="dropdown relative">
-    <button class="block py-2 px-4 text-black relative">Dropdown</button>
-    <div class="content block z-0 w-screen bg-blue-100">
-      <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-500">Item 1</a>
-      <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-500">Item 2</a>
-      <a href="#" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-500">Item 3</a>
-    </div>
-  </div>
-  <a href="#" class="block py-2 px-4 text-black">About</a>
+<div id="mobile-menu" class="mobile-menu lg:hidden hidden mt-16 pt-8 pb-20 overflow-y-scroll bg-blue-400 divide-y-4 h-screen">
+  <a href="/" class="text-black font-semibold text-2xl mx-4 z-10 py-4 ">Home</a>
+      <div class=" ">
+        <a href="/about/"><button class="text-black font-semibold text-2xl mx-4 z-10 py-8">About <i class="fa-solid fa-chevron-down ml-2"></i></button></a>
+        
+        <div class="content z-10  divide-y-4 divide-blue-400 shadow-xl mx-4 py-4">
+          
+          <a href="/about/" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300 bg-blue-100">About Us</a>
+          <a href="/about/vision-mission/" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300 bg-blue-100">Vision & Mission</a>
+          <a href="/about/financials/" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300 bg-blue-100" >Financials</a>
+          <a href="/about/video-gallery/" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300 bg-blue-100">Video Gallery</a>
+          <a href="/about/photo-gallery/" class="block px-4 py-3 font-semibold text-xl text-black hover:bg-blue-300 bg-blue-100">Photo Gallery</a>
+
+          
+        </div>
+      </div>
+      <div class="py-4">
+        <a href="/programs/education/"><button class="text-black font-semibold text-2xl mx-4 z-10 py-8">Programs <i class="fa-solid fa-chevron-down ml-2"></i></button><a/>
+        <div class="content z-10 bg-blue-100 divide-y-4 divide-blue-400 shadow-xl mx-4">
+          <a href="/programs/education/" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Education</a>
+          <a href="/programs/health/" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Health</a>
+          <a href="/programs/special-projects/" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300"> Special Projects</a>
+        </div>
+      </div>
+      <div class="py-4">
+       <a href="/ways-to-give/"><button class="text-black font-semibold text-2xl mx-4 z-10 py-8">Ways To Give <i class="fa-solid fa-chevron-down ml-2"></i></button></a>
+        <div class="content z-10 bg-blue-100 divide-y-4 divide-blue-400 shadow-xl mx-4">
+          <a href="/ways-to-give/#Debit-Credit-Card" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Debit / Credit Card</a>
+          <a href="/ways-to-give/#PayPal-&-Donor-Websites" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">PayPal & Donor Websites</a>
+          <a href="/ways-to-give/#Online-Fundraisers" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300"> Online Fundraisers</a>
+          <a href="/ways-to-give/#Donate-a-Car" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Donate a Car</a>
+          <a href="/ways-to-give/#Will" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Will (Legacy Giving)</a>
+
+
+        </div>
+      </div>
+      <div class="py-4">
+      <a href="/events/">  <button class="text-black font-semibold text-2xl mx-4 z-10 py-8">Events <i class="fa-solid fa-chevron-down ml-2"></i></button></a>
+        <div class="content z-10 bg-blue-100 divide-y-4 divide-blue-400 shadow-xl mx-4">
+          <a href="/news/" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">News</a>
+          <a href="/events/" class="block px-4 py-2 font-semibold text-xl text-black hover:bg-blue-300">Event</a>
+        </div>
+      </div>
+      <a href="/contact/" class="block px-8 mx-6 py-3 font-semibold text-xl text-black hover:bg-blue-300 bg-blue-100">Contact Us</a>
 </div>
-
-<script>
-  document.getElementById("menu-toggle").addEventListener("click", function() {
-    var mobileMenu = document.getElementById("mobile-menu");
-    if (mobileMenu.classList.contains("hidden")) {
-      mobileMenu.classList.remove("hidden");
-      // Add event listener to handle clicks outside the menu
-      document.addEventListener("click", closeMobileMenu);
-    } else {
-      mobileMenu.classList.add("hidden");
-      // Remove event listener when menu is closed
-      document.removeEventListener("click", closeMobileMenu);
-    }
-  });
-
-  function closeMobileMenu(event) {
-    var mobileMenu = document.getElementById("mobile-menu");
-    var menuToggle = document.getElementById("menu-toggle");
-    // Close menu if clicked outside the mobile menu or the menu toggle button
-    if (!mobileMenu.contains(event.target) && event.target !== menuToggle) {
-      mobileMenu.classList.add("hidden");
-      document.removeEventListener("click", closeMobileMenu);
-    }
-  }
-</script>
