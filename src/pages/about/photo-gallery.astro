@@ -3,4 +3,94 @@ import Layout from '../../layouts/Layout.astro';
 ---
 <Layout title="Photo Gallery">
 	<h1 class="text-center text-8xl font-black">Photo Gallery</h1>
+	<br>
+	
+	<style>
+		/* Animation classes */
+		.fade-in {
+		  animation: fadeIn 0.3s ease-out;
+		}
+	  
+		@keyframes fadeIn {
+		  from {
+			opacity: 0;
+		  }
+		  to {
+			opacity: 1;
+		  }
+		}
+	  </style>
+	  
+	  <div class="container px-2 mx-auto py-8">
+		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4">
+			<div class="gallery-item">
+				<img id="image1" src="https://images.unsplash.com/photo-1707345512638-997d31a10eaa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 1" class="w-full h-auto cursor-pointer">
+			  </div>
+			  <div class="gallery-item">
+				<img id="image2" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 2" class="w-full h-auto cursor-pointer">
+			  </div>
+			  <div class="gallery-item">
+				<img id="image3" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 2" class="w-full h-auto cursor-pointer">
+			  </div>
+			  <div class="gallery-item">
+				<img id="image4" src="https://images.unsplash.com/photo-1707345512638-997d31a10eaa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 1" class="w-full h-auto cursor-pointer">
+			  </div>
+			  <div class="gallery-item">
+				<img id="image5" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 2" class="w-full h-auto cursor-pointer">
+			  </div>
+			  <div class="gallery-item">
+				<img id="image6" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 2" class="w-full h-auto cursor-pointer">
+			  </div>
+			  <div class="gallery-item">
+				<img id="image7" src="https://images.unsplash.com/photo-1707345512638-997d31a10eaa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 1" class="w-full h-auto cursor-pointer">
+			  </div>
+			  <div class="gallery-item">
+				<img id="image8" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 2" class="w-full h-auto cursor-pointer">
+			  </div>
+			  <div class="gallery-item">
+				<img id="image9" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 2" class="w-full h-auto cursor-pointer">
+			  </div>
+			  <div class="gallery-item">
+				<img id="image10" src="https://images.unsplash.com/photo-1707345512638-997d31a10eaa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 1" class="w-full h-auto cursor-pointer">
+			  </div>
+			  <div class="gallery-item">
+				<img id="image11" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 2" class="w-full h-auto cursor-pointer">
+			  </div>
+			  <div class="gallery-item">
+				<img id="image12" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 2" class="w-full h-auto cursor-pointer">
+			  </div>
+		</div>
+	  </div>
+	  
+	  <!-- Modal -->
+	  <div id="modal" class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 hidden">
+		<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded shadow-lg">
+		  <button id="closeModalBtn" class="text-gray-900 absolute top-0 right-0 px-4 py-1 text-6xl">&times;</button>
+		  <img id="modal-image" src="" alt="Modal Image" class="max-w-full max-h-full">
+		</div>
+	  </div>
+	  
+	  <script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function () {
+		  const images = document.querySelectorAll('.gallery-item img');
+		  const modal = document.getElementById('modal');
+		  const modalImage = document.getElementById('modal-image');
+		  const closeModalBtn = document.getElementById('closeModalBtn');
+	  
+		  images.forEach(image => {
+			image.addEventListener('click', function () {
+			  const imageUrl = this.getAttribute('src');
+			  modalImage.src = imageUrl;
+			  modal.classList.remove('hidden');
+			  modal.classList.add('fade-in'); // Add fade-in animation class
+			});
+		  });
+	  
+		  closeModalBtn.addEventListener('click', function () {
+			modal.classList.add('hidden');
+			modal.classList.remove('fade-in'); // Remove animation class when hiding
+		  });
+		});
+	  </script>
+	  
 </Layout>
